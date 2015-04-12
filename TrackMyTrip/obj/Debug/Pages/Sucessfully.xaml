@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="TrackMyTrip.Pages.Sucessfully"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TrackMyTrip.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Opacity="0.25" AlignmentX="Left"  AlignmentY="Center" Stretch="UniformToFill" ImageSource="../Assets/Background/bg4.jpg"/>
+        </Grid.Background>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Image Source="ms-appx:///Assets/Congo.png" Width="250"></Image>
+            <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Segoe WP Light" FontSize="16">Registered Sucessfully.</TextBlock>
+        </StackPanel>
+
+        <Button x:ConnectionId='1' x:Name="btn_login" Grid.Row="1" Margin="5" Height="70" BorderBrush="Transparent" Background="#FFFF8F1E" Foreground="White" Width="150" VerticalAlignment="Center" HorizontalAlignment="Center"                        >log in</Button>
+
+    </Grid>
+</Page>
+

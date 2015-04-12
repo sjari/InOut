@@ -1,0 +1,54 @@
+﻿<Page
+    x:Class="TrackMyTrip.Pages.Signup"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TrackMyTrip.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Opacity="0.7" Stretch="UniformToFill" ImageSource="../Assets/Background/bg2.jpg"/>
+        </Grid.Background>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+    
+
+
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <!--<Image Width="100" Source="Assets/Logo.png"></Image>-->
+            <TextBlock FontFamily="Segoe UI Light" FontWeight="ExtraLight" FontSize="64">Sign up</TextBlock>
+          
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" Margin="0" Background="#33000000">
+            <TextBox Background="White" PlaceholderText="Name" Margin="28,10"></TextBox>
+            <TextBox Background="White" PlaceholderText="Username" Margin="28,10"></TextBox>
+            <TextBox Background="White" PlaceholderText="Email" Margin="28,10"></TextBox>
+            <TextBox Background="White" PlaceholderText="Password" Margin="28,10"></TextBox>
+            <TextBox Background="White" PlaceholderText="Confirm Password" Margin="28,10"></TextBox>
+
+        </StackPanel>
+
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" Margin="5" Height="70" BorderBrush="Transparent" Background="#FF9bd845" Width="150" VerticalAlignment="Center" HorizontalAlignment="Center">Cancel</Button>
+            <Button x:ConnectionId='1' Grid.Column="1" Margin="5" Height="70" BorderBrush="Transparent" Background="White" Foreground="#FF9bd845" Width="150" VerticalAlignment="Center" HorizontalAlignment="Center"                     >Sign Up</Button>
+
+        </Grid>
+    </Grid>
+</Page>
+

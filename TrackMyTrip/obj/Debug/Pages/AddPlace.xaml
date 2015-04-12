@@ -1,0 +1,50 @@
+﻿<Page
+    x:Class="TrackMyTrip.Pages.AddPlace"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TrackMyTrip.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="#FFE6E6E6">
+        <!--<Grid.Background>
+            <ImageBrush Opacity="0.6" Stretch="UniformToFill" ImageSource="../Assets/Background/bg3.jpg"/>
+        </Grid.Background>-->
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Background="#FFFF002E">
+            <TextBlock Margin="25,0,0,0"  VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="Segoe UI Light" FontSize="24">Add Places</TextBlock>
+        </Grid>
+
+        <ScrollViewer  Grid.Row="1" VerticalAlignment="Center">
+        <StackPanel>
+            <TextBox Margin="10" Text="Place name" BorderBrush="#FFAEAEAE" Foreground="#FF7C7C7C" BorderThickness="1"></TextBox>
+            <ComboBox x:ConnectionId='1' x:Name="cmb_transpotation" Margin="10,0,10,0" PlaceholderText="Transpotation(परिवहन)" BorderThickness="1" Background="#FF5391DC" BorderBrush="#FFAEAEAE"                                                      >
+
+                <ComboBoxItem >Auto richshaw(ऑटो रिक्शा)</ComboBoxItem>
+                <ComboBoxItem >Cab(टैक्सी)</ComboBoxItem>
+                <ComboBoxItem >Bus(बस)</ComboBoxItem>
+                <ComboBoxItem >Train(रेल गाडी)</ComboBoxItem>
+                <ComboBoxItem >Flight(उड़ान)</ComboBoxItem>
+                <ComboBoxItem >Personal Vehicle(निजी वाहन)</ComboBoxItem>
+                <ComboBoxItem >Later on(बाद में)</ComboBoxItem>
+
+            </ComboBox>
+                <TextBox x:Name="txt_ticket" Visibility="Collapsed" PlaceholderText="Enter ticket rate" Margin="15" BorderBrush="#FFAEAEAE" BorderThickness="1"></TextBox>
+
+            </StackPanel>
+        </ScrollViewer>
+
+
+        <Button Grid.Row="1" Margin="5" Height="70" BorderBrush="Transparent" Background="#FFFF002E" Width="150" VerticalAlignment="Bottom" HorizontalAlignment="Center">Add</Button>
+
+    </Grid>
+</Page>
+
